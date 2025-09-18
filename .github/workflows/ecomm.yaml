@@ -4,6 +4,10 @@ jobs:
   ecomm-workflow:
    runs-on: self-hosted
    steps: 
-   - name: installing nginx
-     run: sudo apt install nginx -y
+   - name: apt-get updating
+     run: sudo apt-get update
+   - name: nginx installing
+     run: sudo apt-get install nginx -y
+   - name: checking ports
+     run: ss -ntpl
     
