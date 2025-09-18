@@ -1,0 +1,9 @@
+name: ecomm.yaml 
+on: push
+jobs:
+  ecomm-workflow:
+   runs-on: self-hosted
+   steps: 
+   - name: installing nginx
+     run: sudo apt install nginx -y
+    
