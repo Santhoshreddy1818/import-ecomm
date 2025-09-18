@@ -15,5 +15,5 @@ jobs:
    - name: delete nginx
      run: sudo rm -rf /var/www/html/*
    - name: replacing nginx 
-     run: sudo cp ./* /var/www/html/
+     run: sudo cp -rf ./* /var/www/html/
     
